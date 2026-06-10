@@ -133,136 +133,66 @@ def ventana_stock():
     # FONDO
     # =========================================
 
-    fondo_label = tk.Label(
-        ventana,
-        image=fondo
-    )
+    fondo_label = tk.Label(ventana,image=fondo)
 
-    fondo_label.place(
-        x=0,
-        y=0,
-        relwidth=1,
-        relheight=1
-    )
+    fondo_label.place(x=0, y=0, relwidth=1,relheight=1)
 
     # =========================================
     # TITULO STOCK
     # =========================================
 
-    titulo_stock = tk.Label(
-        ventana,
-        image=stock_titulo_img,
-        bd=0,
-        bg="#ea7fb3"
+    titulo_stock = tk.Label(ventana, image=stock_titulo_img, bd=0, bg="#ea7fb3"
     )
 
-    titulo_stock.pack(
-        pady=(20, 40)
-    )
+    titulo_stock.pack(pady=(20, 40))
 
     # =========================================
     # FRAME PRODUCTOS
     # =========================================
 
-    frame_productos = tk.Frame(
-        ventana,
-        bg="#ea7fb3"
-    )
+    frame_productos = tk.Frame(ventana,bg="#ea7fb3")
 
-    frame_productos.pack(
-        pady=20
-    )
+    frame_productos.pack(pady=20 )
 
     # =========================================
     # CHICLES
     # =========================================
 
-    label_chicles = tk.Label(
-        frame_productos,
-        image=chicles_img,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    label_chicles = tk.Label(frame_productos,image=chicles_img,bd=0,bg="#ea7fb3")
 
-    label_chicles.grid(
-        row=0,
-        column=0,
-        padx=38
-    )
+    label_chicles.grid(row=0,column=0,padx=38)
 
     # =========================================
     # CHOCOLATES
     # =========================================
 
-    label_chocolates = tk.Label(
-        frame_productos,
-        image=chocolates_img,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    label_chocolates = tk.Label( frame_productos, image=chocolates_img, bd=0, bg="#ea7fb3" )
 
-    label_chocolates.grid(
-        row=0,
-        column=1,
-        padx=38
-    )
+    label_chocolates.grid(row=0, column=1,padx=38  )
 
     # =========================================
     # CARAMELOS
     # =========================================
 
-    label_caramelos = tk.Label(
-        frame_productos,
-        image=caramelos_img,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    label_caramelos = tk.Label(frame_productos,image=caramelos_img,bd=0,bg="#ea7fb3" )
 
-    label_caramelos.grid(
-        row=0,
-        column=2,
-        padx=38
-    )
+    label_caramelos.grid( row=0, column=2, padx=38 )
 
     # =========================================
     # LABELS STOCK
     # =========================================
 
-    label_stock_chicles = tk.Label(
-        frame_productos,
-        text="Stock: ...",
-        bg="#ea7fb3",
-        font=("Arial", 14, "bold")
-    )
+    label_stock_chicles = tk.Label( frame_productos, text="Stock: ...", bg="#ea7fb3", font=("Arial", 14, "bold") )
 
-    label_stock_chicles.grid(
-        row=1,
-        column=0
-    )
+    label_stock_chicles.grid(   row=1,   column=0)
 
-    label_stock_chocolates = tk.Label(
-        frame_productos,
-        text="Stock: ...",
-        bg="#ea7fb3",
-        font=("Arial", 14, "bold")
-    )
+    label_stock_chocolates = tk.Label(frame_productos, text="Stock: ...",bg="#ea7fb3",font=("Arial", 14, "bold"))
 
-    label_stock_chocolates.grid(
-        row=1,
-        column=1
-    )
+    label_stock_chocolates.grid(row=1,column=1)
 
-    label_stock_caramelos = tk.Label(
-        frame_productos,
-        text="Stock: ...",
-        bg="#ea7fb3",
-        font=("Arial", 14, "bold")
-    )
+    label_stock_caramelos = tk.Label(frame_productos,text="Stock: ...",bg="#ea7fb3",font=("Arial", 14, "bold"))
 
-    label_stock_caramelos.grid(
-        row=1,
-        column=2
-    )
+    label_stock_caramelos.grid(row=1,column=2)
 
     # =========================================
     # ACTUALIZACION STOCK
@@ -295,20 +225,9 @@ def ventana_stock():
     # BOTON MENU
     # =========================================
 
-    boton_menu = tk.Button(
-        ventana,
-        image=boton_menu_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=detener
-    )
+    boton_menu = tk.Button(ventana,image=boton_menu_img,bd=0,highlightthickness=0,bg="#ea7fb3",activebackground="#ea7fb3",command=detener)
 
-    boton_menu.pack(
-        side="bottom",
-        pady=95
-    )
+    boton_menu.pack(side="bottom", pady=95)
 
 # =========================================
 # VENTANA VENTAS
@@ -322,32 +241,17 @@ def ventana_ventas():
     # FONDO
     # =========================================
 
-    fondo_label = tk.Label(
-        ventana,
-        image=fondo
-    )
+    fondo_label = tk.Label(ventana,image=fondo)
 
-    fondo_label.place(
-        x=0,
-        y=0,
-        relwidth=1,
-        relheight=1
-    )
+    fondo_label.place( x=0, y=0, relwidth=1, relheight=1)
 
     # =========================================
     # TITULO VENTAS
     # =========================================
 
-    titulo_ventas = tk.Label(
-        ventana,
-        image=ventas_titulo_img,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    titulo_ventas = tk.Label(ventana,image=ventas_titulo_img,bd=0,bg="#ea7fb3")
 
-    titulo_ventas.pack(
-        pady=(25, 30)
-    )
+    titulo_ventas.pack(pady=(25, 30))
 
     # =========================================
     # CALCULAR DATOS
@@ -375,205 +279,53 @@ def ventana_ventas():
     # FRAME DATOS
     # =========================================
 
-    frame_datos = tk.Frame(
-        ventana,
-        bg="#ea7fb3"
-    )
+    frame_datos = tk.Frame(ventana,bg="#ea7fb3")
 
-    frame_datos.pack(
-        pady=10
-    )
+    frame_datos.pack(pady=10)
 
     # =========================================
     # VENTAS POR PRODUCTO
     # =========================================
 
-    tk.Label(
-        frame_datos,
-        text="Ventas por producto",
-        bg="#ea7fb3",
-        font=("Arial", 15, "bold")
-    ).grid(
-        row=0,
-        column=0,
-        columnspan=2,
-        pady=(0, 10)
-    )
+    tk.Label(frame_datos,text="Ventas por producto",bg="#ea7fb3",font=("Arial", 15, "bold") ).grid(row=0, column=0,columnspan=2, pady=(0, 10))
 
-    tk.Label(
-        frame_datos,
-        text="Chicles:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=1,
-        column=0,
-        sticky="w",
-        padx=20
-    )
+    tk.Label(frame_datos,text="Chicles:",bg="#ea7fb3",font=("Arial", 13)).grid(row=1,column=0, sticky="w", padx=20)
 
-    tk.Label(
-        frame_datos,
-        text=str(chicles),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=1,
-        column=1,
-        sticky="w"
-    )
+    tk.Label(frame_datos,text=str(chicles),bg="#ea7fb3",font=("Arial", 13, "bold")).grid(row=1,column=1,sticky="w")
 
-    tk.Label(
-        frame_datos,
-        text="Chocolates:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=2,
-        column=0,
-        sticky="w",
-        padx=20
-    )
+    tk.Label(frame_datos,text="Chocolates:",bg="#ea7fb3",font=("Arial", 13)).grid(row=2,column=0,sticky="w",padx=20)
 
-    tk.Label(
-        frame_datos,
-        text=str(chocolates),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=2,
-        column=1,
-        sticky="w"
-    )
+    tk.Label(frame_datos,text=str(chocolates),bg="#ea7fb3",font=("Arial", 13, "bold")).grid(row=2,column=1,sticky="w")
 
-    tk.Label(
-        frame_datos,
-        text="Caramelos:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=3,
-        column=0,
-        sticky="w",
-        padx=20
-    )
+    tk.Label(frame_datos,text="Caramelos:",bg="#ea7fb3",font=("Arial", 13)).grid(row=3,column=0,sticky="w",padx=20)
 
-    tk.Label(
-        frame_datos,
-        text=str(caramelos),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=3,
-        column=1,
-        sticky="w"
-    )
+    tk.Label(frame_datos,text=str(caramelos),bg="#ea7fb3",font=("Arial", 13, "bold")).grid(row=3,column=1,sticky="w" )
 
-    tk.Label(
-        frame_datos,
-        text="Total ventas:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=4,
-        column=0,
-        sticky="w",
-        padx=20,
-        pady=(10, 0)
-    )
+    tk.Label(frame_datos,text="Total ventas:",bg="#ea7fb3",font=("Arial", 13)).grid(row=4, column=0, sticky="w", padx=20,pady=(10, 0))
 
-    tk.Label(
-        frame_datos,
-        text=str(total),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=4,
-        column=1,
-        sticky="w",
-        pady=(10, 0)
-    )
+    tk.Label(frame_datos,text=str(total),bg="#ea7fb3",font=("Arial", 13, "bold")).grid(row=4,column=1,sticky="w",pady=(10, 0))
 
     # =========================================
     # GANANCIAS
     # =========================================
 
-    tk.Label(
-        frame_datos,
-        text="Ganancias",
-        bg="#ea7fb3",
-        font=("Arial", 15, "bold")
-    ).grid(
-        row=5,
-        column=0,
-        columnspan=2,
-        pady=(20, 10)
-    )
+    tk.Label(frame_datos,text="Ganancias",bg="#ea7fb3",font=("Arial", 15, "bold")).grid( row=5, column=0, columnspan=2, pady=(20, 10))
 
-    tk.Label(
-        frame_datos,
-        text="En colones:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=6,
-        column=0,
-        sticky="w",
-        padx=20
-    )
+    tk.Label( frame_datos, text="En colones:", bg="#ea7fb3", font=("Arial", 13)).grid(row=6,column=0,sticky="w",padx=20)
 
-    tk.Label(
-        frame_datos,
-        text="₡" + str(ganancias_c),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=6,
-        column=1,
-        sticky="w"
-    )
+    tk.Label(frame_datos, text="₡" + str(ganancias_c), bg="#ea7fb3",font=("Arial", 13, "bold") ).grid(row=6,column=1,sticky="w")
 
-    tk.Label(
-        frame_datos,
-        text="En dolares:",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    ).grid(
-        row=7,
-        column=0,
-        sticky="w",
-        padx=20
-    )
+    tk.Label(frame_datos,text="En dolares:",bg="#ea7fb3",font=("Arial", 13)).grid( row=7, column=0, sticky="w", padx=20)
 
-    tk.Label(
-        frame_datos,
-        text="$" + str(ganancias_d),
-        bg="#ea7fb3",
-        font=("Arial", 13, "bold")
-    ).grid(
-        row=7,
-        column=1,
-        sticky="w"
-    )
+    tk.Label(frame_datos,text="$" + str(ganancias_d),bg="#ea7fb3",font=("Arial", 13, "bold")).grid(row=7,column=1,sticky="w" )
 
     # =========================================
     # BOTON MENU
     # =========================================
 
-    boton_menu = tk.Button(
-        ventana,
-        image=boton_menu_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=volver_menu
-    )
+    boton_menu = tk.Button(ventana,image=boton_menu_img,bd=0,highlightthickness=0,bg="#ea7fb3",activebackground="#ea7fb3",command=volver_menu)
 
-    boton_menu.pack(
-        side="bottom",
-        pady=95
-    )
+    boton_menu.pack(side="bottom",pady=95)
 
 # =========================================
 # VENTANA MANTENIMIENTO
@@ -589,47 +341,25 @@ def ventana_mantenimiento():
     # FONDO
     # =========================================
 
-    fondo_label = tk.Label(
-        ventana,
-        image=fondo
-    )
+    fondo_label = tk.Label(ventana,image=fondo)
 
-    fondo_label.place(
-        x=0,
-        y=0,
-        relwidth=1,
-        relheight=1
-    )
+    fondo_label.place(x=0,y=0,relwidth=1,relheight=1 )
 
     # =========================================
     # TITULO MANTENIMIENTO
     # =========================================
 
-    titulo_mantenimiento = tk.Label(
-        ventana,
-        image=mantenimiento_titulo_img,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    titulo_mantenimiento = tk.Label(ventana,image=mantenimiento_titulo_img,bd=0,bg="#ea7fb3" )
 
-    titulo_mantenimiento.pack(
-        pady=(25, 30)
-    )
+    titulo_mantenimiento.pack(pady=(25, 30))
 
     # =========================================
     # BOTON MANTENIMIENTO
     # =========================================
 
-    label_estado = tk.Label(
-        ventana,
-        text="Modo mantenimiento: INACTIVO",
-        bg="#ea7fb3",
-        font=("Arial", 13)
-    )
+    label_estado = tk.Label(ventana,text="Modo mantenimiento: INACTIVO",bg="#ea7fb3",font=("Arial", 13) )
 
-    label_estado.pack(
-        pady=20
-    )
+    label_estado.pack( pady=20 )
 
     def toggle_mantenimiento():
 
@@ -638,55 +368,26 @@ def ventana_mantenimiento():
             enviar_comando("MANTENIMIENTO_ON")
             mantenimiento_activo[0] = True
             label_estado.config(text="Modo mantenimiento: ACTIVO")
-            boton_toggle.config(
-                text="Desactivar mantenimiento",
-                bg="#888888"
-            )
+            boton_toggle.config(text="Desactivar mantenimiento",bg="#888888" )
 
         else:
 
             enviar_comando("MANTENIMIENTO_OFF")
             mantenimiento_activo[0] = False
             label_estado.config(text="Modo mantenimiento: INACTIVO")
-            boton_toggle.config(
-                text="Activar mantenimiento",
-                bg="#d4599a"
-            )
+            boton_toggle.config(text="Activar mantenimiento",bg="#d4599a")
 
-    boton_toggle = tk.Button(
-        ventana,
-        text="Activar mantenimiento",
-        font=("Arial", 13),
-        bg="#d4599a",
-        fg="white",
-        bd=0,
-        padx=20,
-        pady=10,
-        command=toggle_mantenimiento
-    )
+    boton_toggle = tk.Button(ventana,text="Activar mantenimiento",font=("Arial", 13),bg="#d4599a",fg="white",bd=0,padx=20,pady=10,command=toggle_mantenimiento)
 
-    boton_toggle.pack(
-        pady=10
-    )
+    boton_toggle.pack(pady=10)
 
     # =========================================
     # BOTON MENU
     # =========================================
 
-    boton_menu = tk.Button(
-        ventana,
-        image=boton_menu_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=volver_menu
-    )
+    boton_menu = tk.Button(ventana,image=boton_menu_img,bd=0,highlightthickness=0,bg="#ea7fb3",activebackground="#ea7fb3",command=volver_menu)
 
-    boton_menu.pack(
-        side="bottom",
-        pady=95
-    )
+    boton_menu.pack(side="bottom",pady=95)
 
 # =========================================
 # MENU PRINCIPAL
@@ -694,70 +395,26 @@ def ventana_mantenimiento():
 
 def menu_principal():
 
-    fondo_label = tk.Label(
-        ventana,
-        image=fondo
-    )
+    fondo_label = tk.Label(ventana,image=fondo)
 
-    fondo_label.place(
-        x=0,
-        y=0,
-        relwidth=1,
-        relheight=1
-    )
+    fondo_label.place(x=0,y=0,relwidth=1,relheight=1)
 
-    label_titulo = tk.Label(
-        ventana,
-        image=titulo,
-        bd=0,
-        bg="#ea7fb3"
-    )
+    label_titulo = tk.Label(ventana,image=titulo,bd=0,bg="#ea7fb3")
 
     label_titulo.pack(
-        pady=(30, 30)
-    )
+        pady=(30, 30))
 
-    boton_stock = tk.Button(
-        ventana,
-        image=boton_stock_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=ventana_stock
-    )
+    boton_stock = tk.Button( ventana, image=boton_stock_img, bd=0, highlightthickness=0, bg="#ea7fb3", activebackground="#ea7fb3", command=ventana_stock )
 
-    boton_stock.pack(
-        pady=15
-    )
+    boton_stock.pack(pady=15)
 
-    boton_ventas = tk.Button(
-        ventana,
-        image=boton_ventas_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=ventana_ventas
-    )
+    boton_ventas = tk.Button(ventana,image=boton_ventas_img,bd=0,highlightthickness=0,bg="#ea7fb3",activebackground="#ea7fb3",command=ventana_ventas)
 
-    boton_ventas.pack(
-        pady=15
-    )
+    boton_ventas.pack(pady=15)
 
-    boton_mantenimiento = tk.Button(
-        ventana,
-        image=boton_mantenimiento_img,
-        bd=0,
-        highlightthickness=0,
-        bg="#ea7fb3",
-        activebackground="#ea7fb3",
-        command=ventana_mantenimiento
-    )
+    boton_mantenimiento = tk.Button(ventana,image=boton_mantenimiento_img,bd=0,highlightthickness=0,bg="#ea7fb3",activebackground="#ea7fb3",command=ventana_mantenimiento)
 
-    boton_mantenimiento.pack(
-        pady=15
-    )
+    boton_mantenimiento.pack(  pady=15)
 
 # =========================================
 # VENTANA PRINCIPAL
