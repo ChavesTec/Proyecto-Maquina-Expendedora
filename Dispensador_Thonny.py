@@ -26,7 +26,7 @@ led2 = Pin(16, Pin.OUT)
 led3 = Pin(17, Pin.OUT)
 
 # ====================================
-# LEDS AGOTADO
+# LEDS AGOTADO(rojo)
 # ====================================
 
 led_agotado1 = Pin(21, Pin.OUT)
@@ -107,8 +107,7 @@ def mostrar_numero(numero):
 
 def mover_servo(servo, angulo):
 
-    duty = int(
-        1000 + (angulo / 180) * 8000)
+    duty = int(1000 + (angulo / 180) * 8000)
 
     servo.duty_u16(duty)
 
@@ -123,7 +122,7 @@ mover_servo(servo3, 0)
 sleep(1)
 
 # ====================================
-# STOCK
+# stock
 # ====================================
 
 stock = [9, 9, 9]
