@@ -99,9 +99,7 @@ def mostrar_numero(numero):
 
     for i in range(7):
 
-        segmentos[i].value(
-            patron[i]
-        )
+        segmentos[i].value(patron[i])
 
 # ====================================
 # FUNCION SERVO
@@ -110,8 +108,7 @@ def mostrar_numero(numero):
 def mover_servo(servo, angulo):
 
     duty = int(
-        1000 + (angulo / 180) * 8000
-    )
+        1000 + (angulo / 180) * 8000)
 
     servo.duty_u16(duty)
 
